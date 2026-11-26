@@ -1,0 +1,161 @@
+/* BACKGROUND */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* IPOD */
+.ipod {
+    position: relative;
+    width: 1500px;
+    max-width: 95vw;
+    aspect-ratio: 1632 / 900;
+    margin: 0 auto;
+    top: 100px;
+    left: -320px;
+}
+
+.ipod-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* SCREEN */
+.screen {
+    position: absolute;
+    left: 10.5%;
+    top: 13.5%;
+    width: 45%;
+    height: 56%;
+    overflow: hidden;
+    transform: matrix(1, 0.12, -0.07, 1, 0, 0);
+    transform-origin: top left;
+    padding: 15px;
+    box-sizing: border-box;
+    color: black;
+    font-family: monospace;
+}
+
+/* BUTTONS */
+.previous, .next {
+    position: absolute;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 3%;
+    height: 4%;
+    border-radius: 50%;
+}
+
+.previous {
+    left: 59.5%;
+    top: 50%;
+}
+
+.next {
+    left: 81%;
+    top: 55%;
+}
+/* MENU CONTENT */
+#menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 5px;
+}
+
+/* MENU TITLE */
+#menu h1 {
+    text-align: center;
+    font-size: 45px;
+    margin: 0 0 -2px;
+}
+
+/* FOOD ITEMS */
+.food-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+    gap: 0;
+}
+
+/* FOOD PICTURES */
+.food-item img {
+    width: 48%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    left: 15px;
+    top: 2px;
+}
+
+/* FOOD TEXT */
+.food-info {
+    width: 57%;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.food-item {
+    gap: 0;
+}
+
+}
+
+.food-info h2 {
+    font-size: 35px;
+    margin: 2px 0;
+}
+
+.food-info p {
+    font-size: 25px;
+    line-height: 1.2;
+    margin: 1px 0;
+}
+
+/* SECOND FOOD ITEM */
+.food-item.reverse {
+    flex-direction: row-reverse;
+}
+/* FIRST FOOD TEXT - FRUIT SANDOS */
+.food-item:nth-of-type(1) .food-info {
+    position: relative;
+    left: 0px;
+    top: 10px;
+}
+
+/* SECOND FOOD TEXT - OMURICE */
+.food-item:nth-of-type(2) .food-info {
+    position: relative;
+    left: 50px;
+    top: -15px;
+}
+
+/* HOME BUTTON */
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.home-button img {
+    width: 80px;
+    height: auto;
+    cursor: pointer;
+}

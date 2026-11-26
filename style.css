@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* BACKGROUND */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* HOMEPAGE */
+.homepage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* LOGO */
+.logo {
+    position: absolute;
+    width: 750px;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	z-index: 5;
+}
+
+/* STORE IMAGES */
+.homepage img:not(.logo) {
+    position: absolute;
+    height: auto;
+    object-fit: contain;
+}
+
+/* UP STORE */
+.up {
+    width: 500px !important;
+    top: -2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* UP RIGHT */
+.up-right {
+    width: 800px !important;
+    top: 0%;
+    right: -1%;
+}
+
+/* DOWN RIGHT */
+.down-right {
+    width: 800px !important;
+    bottom: -2%;
+    right: 8%;
+}
+
+/* UP LEFT */
+.up-left {
+    width: 950px !important;
+    top: 50;
+    left: -5%;
+}
+
+/* DOWN LEFT */
+.down-left {
+    width: 1000px !important;
+    bottom: -2%;
+    left: -6%;
+}
+
+/* Checkpoint */
+
+
+/* CLICKABLE DOORS */
+.door {
+    position: absolute;
+    display: block;
+    z-index: 20;
+}
+
+/* TOP CENTER STORE */
+.door-up {
+    top: 20%;
+    left: 53.2%;
+    width: 4%;
+    height: 9%;
+}
+
+/* TOP RIGHT STORE */
+.door-up-right {
+    top: 34%;
+    left: 79%;
+    width: 5%;
+    height: 17%;
+}
+
+/* BOTTOM RIGHT STORE */
+.door-down-right {
+    top: 74%;
+    left: 60.5%;
+    width: 5.5%;
+    height: 16%;
+}
+
+/* TOP LEFT STORE */
+.door-up-left {
+    top: 33%;
+    left: 26%;
+    width: 5%;
+    height: 15%;
+}
+
+/* BOTTOM LEFT STORE */
+.door-down-left {
+    top: 65%;
+    left: 26.5%;
+    width: 5%;
+    height: 15%;
+}
